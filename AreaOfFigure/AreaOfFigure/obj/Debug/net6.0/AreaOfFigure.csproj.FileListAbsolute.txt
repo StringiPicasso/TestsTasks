@@ -1,0 +1,11 @@
+C:\Users\Анастасия Еремина\Documents\GitHubTests\TestsTasks\AreaOfFigure\AreaOfFigure\obj\Debug\net6.0\AreaOfFigure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Анастасия Еремина\Documents\GitHubTests\TestsTasks\AreaOfFigure\AreaOfFigure\obj\Debug\net6.0\AreaOfFigure.AssemblyInfoInputs.cache
+C:\Users\Анастасия Еремина\Documents\GitHubTests\TestsTasks\AreaOfFigure\AreaOfFigure\obj\Debug\net6.0\AreaOfFigure.AssemblyInfo.cs
+C:\Users\Анастасия Еремина\Documents\GitHubTests\TestsTasks\AreaOfFigure\AreaOfFigure\obj\Debug\net6.0\AreaOfFigure.csproj.CoreCompileInputs.cache
+C:\Users\Анастасия Еремина\Documents\GitHubTests\TestsTasks\AreaOfFigure\AreaOfFigure\bin\Debug\net6.0\AreaOfFigure.deps.json
+C:\Users\Анастасия Еремина\Documents\GitHubTests\TestsTasks\AreaOfFigure\AreaOfFigure\bin\Debug\net6.0\AreaOfFigure.dll
+C:\Users\Анастасия Еремина\Documents\GitHubTests\TestsTasks\AreaOfFigure\AreaOfFigure\bin\Debug\net6.0\AreaOfFigure.pdb
+C:\Users\Анастасия Еремина\Documents\GitHubTests\TestsTasks\AreaOfFigure\AreaOfFigure\obj\Debug\net6.0\AreaOfFigure.dll
+C:\Users\Анастасия Еремина\Documents\GitHubTests\TestsTasks\AreaOfFigure\AreaOfFigure\obj\Debug\net6.0\refint\AreaOfFigure.dll
+C:\Users\Анастасия Еремина\Documents\GitHubTests\TestsTasks\AreaOfFigure\AreaOfFigure\obj\Debug\net6.0\AreaOfFigure.pdb
+C:\Users\Анастасия Еремина\Documents\GitHubTests\TestsTasks\AreaOfFigure\AreaOfFigure\obj\Debug\net6.0\ref\AreaOfFigure.dll
