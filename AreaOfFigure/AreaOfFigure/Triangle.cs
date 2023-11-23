@@ -9,20 +9,22 @@ namespace AreaOfFigure
 {
     internal class Triangle : Figure
     {
-        public Triangle(double size1, double size2, double size3) : base(size1, size2, size3)
+        private double halhPerimeter { get; set; }
+
+        public override double Area
         {
-           
+            get
+            {
+                for (int i = 0; i < Sides.Count; i++)
+                {
+                    halhPerimeter += Sides[i];
+                }
+
+                halhPerimeter= halhPerimeter / 2;
+                double answer = Math.Sqrt(halhPerimeter * (halhPerimeter - Sides[0]) * (halhPerimeter - Sides[1]) * (halhPerimeter - Sides[2]));
+
+                return answer;
+            }
         }
-
-
-        public double CalcilateTriangle(double size1, double size2, double size3)
-        {
-            double halhPerimeter = (size1 + size2 + size3) / 2;
-
-            Area = Math.Sqrt(halhPerimeter * (halhPerimeter - size1) * (halhPerimeter - size2) * (halhPerimeter - size3));
-
-            return Area;
-        }
-        
     }
 }

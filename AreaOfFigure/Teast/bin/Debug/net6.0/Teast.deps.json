@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Teast/1.0.0": {
+        "dependencies": {
+          "AreaOfFigure": "1.0.0"
+        },
+        "runtime": {
+          "Teast.dll": {}
+        }
+      },
+      "AreaOfFigure/1.0.0": {
+        "runtime": {
+          "AreaOfFigure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Teast/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AreaOfFigure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

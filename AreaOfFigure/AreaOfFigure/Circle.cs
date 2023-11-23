@@ -2,18 +2,7 @@
 {
     internal class Circle : Figure
     {
-        private double _radius;
-
-        public Circle(double radius) : base(radius)
-        {
-            _radius = radius;
-        }
-
-        public double CallculateCircle(double radius)
-        {
-            Area=Math.PI*Math.Pow(radius,2);
-
-            return Area;
-        }
+        public double Degree { get; set; } = 2;
+        public override double Area => Math.PI * Math.Pow(Sides[0], Degree);
     }
 }

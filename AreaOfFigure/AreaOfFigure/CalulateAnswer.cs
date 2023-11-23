@@ -6,59 +6,54 @@ using System.Threading.Tasks;
 
 namespace AreaOfFigure
 {
-    internal class CalulateAnswer
+    public class CalulateAnswer
     {
-        private readonly Circle _circle;
-        private readonly Triangle _triangle;
-        string _inputString;
+        private readonly Circle _circle = new Circle();
+        private readonly Triangle _triangle = new Triangle();
+        private List<double> _sides = new List<double>();
 
         public void ProgramCalculate()
         {
-            Console.WriteLine("Choose number of Figure:\n1 - Circle\n2 - Triangle");
-            _inputString = Console.ReadLine();
-
-            ConsoleKeyInfo key = Console.ReadKey(true);
-
-            switch (key.Key)
+            while (true)
             {
-                case ConsoleKey.D1:
-                    CalculateCircleAnswer();
+                Console.WriteLine("Enter the Value or Press the key to see the answer");
+
+                if (TryGetNumber(out double inputText))
+                {
+                    _sides.Add(inputText);
+                }
+                else
+                {
+                    SearchFigure(_sides);
+                }
+
+                _sides.Clear();
+            }
+        }
+
+        private void SearchFigure(List<double> sides)
+        {
+            switch (_sides.Count)
+            {
+                case 1:
+                    _circle.CalculateArea(sides);
                     break;
-                case ConsoleKey.D2:
-                    CalculateTriangleAnswer();
+                case 3:
+                    _triangle.CalculateArea(sides);
+                    break;
+                default:
+                    Console.WriteLine("The Figure not found");
                     break;
             }
-
-            Console.ReadKey();
-            Console.Clear();
-
         }
 
-        private void CalculateCircleAnswer()
+        private bool TryGetNumber(out double inputNumber)
         {
-            double radius;
-            radius = Convert.ToDouble(Console.ReadLine());
+            string inputText = Console.ReadLine();
 
-            double answer = _circle.CallculateCircle(radius);
+            bool isNumber = double.TryParse(inputText, out inputNumber);
 
-            Console.WriteLine($"S={answer}");
-        }
-        private void CalculateTriangleAnswer()
-        {
-            double size;
-            size = Convert.ToDouble(Console.ReadLine());
-
-            _triangle.Size1 = size;
-            size = Convert.ToDouble(Console.ReadLine());
-
-            _triangle.Size2 = size;
-            size = Convert.ToDouble(Console.ReadLine());
-
-            _triangle.Size3 = size;
-
-            double answer = _triangle.CalcilateTriangle(_triangle.Size1, _triangle.Size2, _triangle.Size3);
-
-            Console.WriteLine($"S={answer}");
+            return isNumber;
         }
     }
 }
