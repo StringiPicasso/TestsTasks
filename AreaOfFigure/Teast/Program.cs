@@ -1,5 +1,5 @@
 ﻿using AreaOfFigure;
 
-CalulateAnswer calulateAnswer = new CalulateAnswer();
+CalculateAnswer calulateAnswer = new CalculateAnswer();
 
 calulateAnswer.ProgramCalculate();
