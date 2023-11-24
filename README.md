@@ -20,8 +20,9 @@ SELECT Products.Name, Categories.Name
 FROM Products
 
 LEFT JOIN Categories ON Products.CategoryId = Categories.Id;
-
-
+  
+***
+  
 SELECT - перечисляем все столбцы, которые нам нужны
 
 FROM - таблица для соединения
